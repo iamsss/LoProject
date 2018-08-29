@@ -1,3 +1,4 @@
+import { ComponentsModule } from './../components/components.module';
 import { HomePage } from './../pages/home/home';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -19,7 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp), HttpClientModule
+    IonicModule.forRoot(MyApp), 
+    HttpClientModule,
+    ComponentsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
